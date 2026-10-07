@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ClientPlot from "../components/ClientPlot.astro";
+---
+
+<Layout title="Simple Penguin">
+  <section class="page-intro">
+    <p class="eyebrow">Essai 02</p>
+    <h1>Simple <em>Penguin</em></h1>
+    <p>Les données JSON des manchots affichées dans un nuage de points côté client.</p>
+  </section>
+  <section class="experiment-section chart-card"><ClientPlot mode="penguins" /></section>
+</Layout>

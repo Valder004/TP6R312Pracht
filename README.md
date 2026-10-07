@@ -1,7 +1,7 @@
 - URL site WEB :
 - URL Notebook Observable :
-- Nom :
-- Prénom :
+- Nom : deroo
+- Prénom : valentin
 - Nom binome :
 - Prénom binome :
 

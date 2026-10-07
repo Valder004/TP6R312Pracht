@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PlotCars from "../../components/PlotCars.astro";
+import cars from "../../assets/cars.json";
+---
+
+<Layout title="Automobiles">
+  <section class="page-intro">
+    <p class="eyebrow">Jeu de données Observable</p>
+    <h1>Les <em>automobiles</em></h1>
+    <p>{cars.length} voitures, comparées selon leur consommation, leur poids, leur cylindrée et leur puissance.</p>
+  </section>
+  <section class="species-charts">
+    <article class="chart-card"><h2>Consommation et poids</h2><PlotCars /></article>
+    <article class="chart-card"><h2>Cylindrée et puissance</h2><PlotCars type="performance" /></article>
+  </section>
+  <section class="species-directory">
+    <a class="button" href="/cars/cylinders/">Explorer par nombre de cylindres →</a>
+  </section>
+</Layout>

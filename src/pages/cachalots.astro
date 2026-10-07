@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ClientPlot from "../components/ClientPlot.astro";
+---
+
+<Layout title="Cachalots">
+  <section class="page-intro">
+    <p class="eyebrow">Dataset supplémentaire</p>
+    <h1>Les <em>cachalots</em></h1>
+    <p>Un autre jeu de données, traité avec le même principe de rendu côté client.</p>
+  </section>
+  <section class="experiment-section chart-card"><ClientPlot mode="cachalots" /></section>
+</Layout>
